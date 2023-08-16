@@ -70,6 +70,7 @@
             grid-gap: 12px;
             max-width: 100%;
             box-sizing: border-box;
+            margin-bottom: 16px;
         }
 
         .setting-info-runData-container .grid-item {
@@ -82,7 +83,7 @@
             border: 1px solid #2681ff;
         }
 
-        .grid-item .top-section {
+        .setting-info-runData-container .grid-item .top-section {
             width: 100%;
             height: 32px;
             background-color: #2681ff;
@@ -93,7 +94,7 @@
             color: white;
         }
 
-        .grid-item .middle-section {
+        .setting-info-runData-container .grid-item .middle-section {
             flex: 1;
             display: flex;
             justify-content: center;
@@ -101,6 +102,46 @@
             font-size: 14px;
             color: #333333;
         }
+
+        .setting-info-systemCount-container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        .setting-info-systemCount-container .setting-info-systemCount-item {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-end;
+        }
+
+        .setting-info-systemCount-container .setting-info-systemCount-item .item-top {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .setting-info-systemCount-container .setting-info-systemCount-item .item-top img {
+            width: 24px;
+            height: 24px;
+            margin-right: 8px;
+        }
+
+        .setting-info-systemCount-container .setting-info-systemCount-item .item-top h4 {
+            flex-grow: 1;
+            width: 56px;
+            font-size: 14px;
+            font-weight: 400;
+            color: #666666;
+            line-height: 20px;
+        }
+
 
         /* #endregion 设定信息 */
     </style>
@@ -255,6 +296,39 @@
             <div class="grid-item">
                 <div class="top-section">平均室外温度</div>
                 <div class="middle-section">远程</div>
+            </div>
+        </div>
+        <div class="setting-info-systemCount-container">
+            <div class="setting-info-systemCount-item">
+                <div class="item-top">
+                    <img src="../assets/icon_system_info.png" alt="">
+                    <h4>系统数量</h4>
+                    <h3>24套</h3>
+                </div>
+                <div class="H-line" style="width: calc(100% - 24px - 8px);"></div>
+            </div>
+            <div class="setting-info-systemCount-item">
+                <div class="item-top">
+                    <img src="../assets/icon_system_info.png" alt="">
+                    <h4>系统数量</h4>
+                    <h3>24套</h3>
+                </div>
+                <div class="H-line" style="width: calc(100% - 24px - 8px);"></div>
+            </div>
+            <div class="setting-info-systemCount-item">
+                <div class="item-top">
+                    <img src="../assets/icon_system_info.png" alt="">
+                    <h4>系统数量</h4>
+                    <h3>24套</h3>
+                </div>
+                <div class="H-line" style="width: calc(100% - 24px - 8px);"></div>
+            </div>
+            <div class="setting-info-systemCount-item">
+                <div class="item-top">
+                    <img src="../assets/icon_system_info.png" alt="">
+                    <h4>系统数量</h4>
+                    <h3>24套</h3>
+                </div>
             </div>
         </div>
 </body>
