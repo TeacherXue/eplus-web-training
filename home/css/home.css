@@ -376,3 +376,138 @@ h2 {
 }
 
 /* #endregion 能耗数据 */
+
+       /* #region 设定信息*/
+       .setting-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-bottom: 16px;
+    }
+
+    .setting-info-runMode-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-bottom: 16px;
+    }
+
+    .setting-info-runMode-container-left {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin-right: 50px;
+    }
+
+    .setting-info-runMode-container-left img {
+        width: 120px;
+        height: 108px;
+    }
+
+    .setting-info-runMode-container-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: left;
+    }
+
+    .setting-info-runMode-container-right ul li {
+        font-size: 14px;
+        font-weight: 500;
+        color: #666666;
+        line-height: 20px;
+        margin-bottom: 8px;
+        list-style-type: none;
+        background: url("../assets/hot.png") no-repeat 0.2rem 0.12rem;
+        background-size: 1rem 1rem;
+        text-indent: 2em;
+    }
+
+    .setting-info-runMode-container-right ul li:last-child {
+        margin-bottom: 0px;
+    }
+
+    .setting-info-runData-container {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-gap: 12px;
+        max-width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 16px;
+    }
+
+    .setting-info-runData-container .grid-item {
+        height: 72px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #2681ff;
+    }
+
+    .setting-info-runData-container .grid-item .top-section {
+        width: 100%;
+        height: 32px;
+        background-color: #2681ff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        color: white;
+    }
+
+    .setting-info-runData-container .grid-item .middle-section {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        color: #333333;
+    }
+
+    .setting-info-systemCount-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .setting-info-systemCount-container .setting-info-systemCount-item {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+
+    .setting-info-systemCount-container .setting-info-systemCount-item .item-top {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 8px;
+    }
+
+    .setting-info-systemCount-container .setting-info-systemCount-item .item-top img {
+        width: 24px;
+        height: 24px;
+        margin-right: 8px;
+    }
+
+    .setting-info-systemCount-container .setting-info-systemCount-item .item-top h4 {
+        flex-grow: 1;
+        width: 56px;
+        font-size: 14px;
+        font-weight: 400;
+        color: #666666;
+        line-height: 20px;
+    }
+
+
+    /* #endregion 设定信息 */
