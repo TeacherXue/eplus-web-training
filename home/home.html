@@ -10,7 +10,99 @@
     <title>首页</title>
 
     <style>
+        /* #region 设定信息*/
+        .setting-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            margin-bottom: 16px;
+        }
 
+        .setting-info-runMode-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            margin-left: 16px;
+            margin-right: 16px;
+            margin-bottom: 16px;
+        }
+
+        .setting-info-runMode-container-left {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            margin-right: 50px;
+        }
+
+        .setting-info-runMode-container-left img {
+            width: 120px;
+            height: 108px;
+        }
+
+        .setting-info-runMode-container-right {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: left;
+        }
+
+        .setting-info-runMode-container-right ul li {
+            font-size: 14px;
+            font-weight: 500;
+            color: #666666;
+            line-height: 20px;
+            margin-bottom: 8px;
+            list-style-type: none;
+            background: url("../assets/hot.png") no-repeat 0.2rem 0.12rem;
+            background-size: 1rem 1rem;
+            text-indent: 2em;
+        }
+
+        .setting-info-runMode-container-right ul li:last-child {
+            margin-bottom: 0px;
+        }
+
+        .setting-info-runData-container {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            grid-gap: 12px;
+            max-width: 100%;
+            box-sizing: border-box;
+        }
+
+        .setting-info-runData-container .grid-item {
+            height: 72px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #2681ff;
+        }
+
+        .grid-item .top-section {
+            width: 100%;
+            height: 32px;
+            background-color: #2681ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 12px;
+            color: white;
+        }
+
+        .grid-item .middle-section {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            color: #333333;
+        }
+
+        /* #endregion 设定信息 */
     </style>
 </head>
 
@@ -122,15 +214,49 @@
             </div>
             <div class="energy-data-container-right">
                 <ul>
-                    <li>昨日耗电量   40.00 KWH</li>
-                    <li>近7日耗电量    40.00 KWH</li>
-                    <li>近7日平均耗电量    40.00 KWH</li>
-                    <li>近30日耗电量    40.00 KWH</li>
+                    <li>昨日耗电量 40.00 KWH</li>
+                    <li>近7日耗电量 40.00 KWH</li>
+                    <li>近7日平均耗电量 40.00 KWH</li>
+                    <li>近30日耗电量 40.00 KWH</li>
                 </ul>
             </div>
         </div>
     </div>
     <div class="H-line"></div>
+    <div class="setting-info">
+        <h2>设定信息</h2>
+        <div class="setting-info-runMode-container">
+            <div class="setting-info-runMode-container-left">
+                <img src="../assets/icon_vrf_air_condition.png" alt="">
+            </div>
+            <div class="setting-info-runMode-container-right">
+                <ul>
+                    <li>制冷&nbsp;&nbsp;&nbsp;&nbsp;26℃</li>
+                    <li>制热&nbsp;&nbsp;&nbsp;&nbsp;26℃</li>
+                    <li>送风&nbsp;&nbsp;&nbsp;&nbsp;26℃</li>
+                    <li>除湿&nbsp;&nbsp;&nbsp;&nbsp;26℃</li>
+                    <li>睡眠&nbsp;&nbsp;&nbsp;&nbsp;26℃</li>
+                </ul>
+            </div>
+        </div>
+        <div class="setting-info-runData-container">
+            <div class="grid-item">
+                <div class="top-section">平均设定温度</div>
+                <div class="middle-section">远程</div>
+            </div>
+            <div class="grid-item">
+                <div class="top-section">内机开机率</div>
+                <div class="middle-section">远程</div>
+            </div>
+            <div class="grid-item">
+                <div class="top-section">平均室内温度</div>
+                <div class="middle-section">远程</div>
+            </div>
+            <div class="grid-item">
+                <div class="top-section">平均室外温度</div>
+                <div class="middle-section">远程</div>
+            </div>
+        </div>
 </body>
 
 </html>

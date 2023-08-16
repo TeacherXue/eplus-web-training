@@ -26,6 +26,11 @@ h2 {
     margin-bottom: 16px;
 }
 
+.arrow-img {
+    width: 16px;
+    height: 16px;
+}
+
 /* #endregion 公共样式*/
 
 /*#region 头部*/
@@ -142,14 +147,13 @@ h2 {
     margin-bottom: 16px;
 }
 
+.energy-ruler img {
+    height: 63px;
+}
+
 /* #endregion 能效标尺 */
 
 /* #region 系统评分*/
-.arrow-img {
-    width: 16px;
-    height: 16px;
-}
-
 .system-score {
     display: flex;
     flex-direction: column;
@@ -372,12 +376,3 @@ h2 {
 }
 
 /* #endregion 能耗数据 */
-
-/* #region 设定信息*/
-.setting-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin-bottom: 16px;
-}
-/* #endregion 设定信息 */
