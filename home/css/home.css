@@ -422,7 +422,7 @@ h2 {
         line-height: 20px;
         margin-bottom: 8px;
         list-style-type: none;
-        background: url("../assets/hot.png") no-repeat 0.2rem 0.12rem;
+        background: url("../../assets/hot.png") no-repeat 0.2rem 0.12rem;
         background-size: 1rem 1rem;
         text-indent: 2em;
     }
