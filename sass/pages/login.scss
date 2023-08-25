@@ -2,10 +2,10 @@
 @use "../abstracts/mixin";
 
 body {
+    @include mixin.flex-center(column, flex-start, center);
     margin: 0;
     padding: 0;
     background-color: variables.$theme-color-main;
-    @include mixin.flex-center(column, flex-start, center);
 }
 
 .login-welcome {
@@ -28,20 +28,19 @@ body {
 }
 
 .login-container {
+    @include mixin.flex-center(column, flex-start, center);
     margin-top: 20px;
     padding-top: 20px;
     width: 93%;
     height: 300px;
     background-color: variables.$white;
     border-radius: 20px;
-    @include mixin.flex-center(column, flex-start, center);
-
     .login-form {
-        width: 100%;
         @include mixin.flex-center(column, flex-start, center);
+        width: 100%;
     }
 
-    .account,
+    .username,
     .password {
         margin-top: 23px;
         width: calc(90% - 20px);
@@ -51,7 +50,7 @@ body {
         font-size: 16px;
         border-radius: 24px;
         padding-left: 20px;
-
+        background-color: variables.$light-purple;
         &::placeholder {
             color: variables.$purple;
         }
