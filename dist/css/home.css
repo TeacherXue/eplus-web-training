@@ -1,0 +1,710 @@
+@charset "UTF-8";
+/* #region 公共样式*/
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  margin: 0;
+  padding: 48px 16px 20px;
+  background-color: #FFF;
+}
+
+h2 {
+  width: 64px;
+  height: 24px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  line-height: 24px;
+}
+
+.H-line {
+  width: 100%;
+  height: 1px;
+  background-color: #E5E5E5;
+  margin-bottom: 16px;
+}
+
+.arrow-img {
+  width: 16px;
+  height: 16px;
+}
+
+/* #endregion 公共样式*/
+/*#region 头部*/
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  height: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 16px;
+}
+.header h1 {
+  width: 132px;
+  height: 30px;
+  margin-right: 8px;
+  font-size: 22px;
+  font-family: PingFangSC-Medium, PingFang SC;
+  font-weight: 500;
+  color: #333;
+  line-height: 30px;
+}
+.header img {
+  width: 16px;
+  height: 16px;
+}
+
+/*#endregion 头部*/
+/*#region 天气*/
+.weather {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 16px;
+}
+.weather h3 {
+  width: 96px;
+  height: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+  line-height: 20px;
+}
+.weather h4 {
+  width: 154px;
+  height: 17px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #666;
+  line-height: 17px;
+}
+
+/*#endregion 天气*/
+/*#region 应用列表*/
+.apps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow-x: auto;
+  scrollbar-width: none;
+  margin-bottom: 16px;
+}
+.apps::-webkit-scrollbar {
+  display: none;
+  /* For Chrome, Safari and Opera */
+}
+.apps::after {
+  content: "";
+  width: 32px;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+}
+.apps .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 24px;
+}
+.apps .item:last-child {
+  margin-right: 0;
+}
+.apps .item img {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  width: 48px;
+  height: 48px;
+}
+.apps .item h4 {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  width: 56px;
+  height: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #666;
+  line-height: 20px;
+}
+
+/*#endregion 应用列表*/
+/* #region 能效标尺*/
+.energy-ruler {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  margin-bottom: 16px;
+}
+.energy-ruler img {
+  height: 63px;
+}
+
+/* #endregion 能效标尺 */
+/* #region 系统评分*/
+.system-score {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  margin-bottom: 16px;
+}
+.system-score .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 8px;
+}
+.system-score .title .right-view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.system-score .title .right-view h3 {
+  width: 108px;
+  height: 24px;
+  font-size: 12px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #666;
+  line-height: 24px;
+}
+
+.system-score-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  width: calc(100% - 32px);
+  padding: 32px 16px;
+  background: -webkit-gradient(linear, left top, right bottom, from(#CCD7EF), to(#FFF));
+  background: linear-gradient(to right bottom, #CCD7EF, #FFF);
+  border-radius: 4px;
+  position: relative;
+}
+.system-score-container .flag {
+  width: 52px;
+  height: 52px;
+  position: absolute;
+  left: calc(100% - 52px);
+  top: 0;
+}
+.system-score-container .top-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  margin-bottom: 16px;
+}
+.system-score-container .top-container .animation {
+  width: 140px;
+  height: 140px;
+  margin-right: 30px;
+}
+.system-score-container .top-container .top-container-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+}
+.system-score-container .top-container .top-container-right .line1 {
+  height: 17px;
+  margin-bottom: 8px;
+}
+.system-score-container .top-container .top-container-right .line1 #line1-normal {
+  font-size: 12px;
+  font-weight: 400;
+  color: #333;
+  line-height: 17px;
+}
+.system-score-container .top-container .top-container-right .line1 #line1-special {
+  font-size: 12px;
+  font-weight: 400;
+  color: #2681FF;
+  line-height: 17px;
+}
+.system-score-container .top-container .top-container-right .line2 {
+  margin-bottom: 8px;
+}
+.system-score-container .top-container .top-container-right .line2 #line2-normal {
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  line-height: 17px;
+}
+.system-score-container .top-container .top-container-right .line2 #line2-special {
+  font-size: 20px;
+  font-weight: 400;
+  color: #2681FF;
+  line-height: 17px;
+}
+.system-score-container .top-container .top-container-right .line3 {
+  margin-bottom: 20px;
+}
+.system-score-container .top-container .top-container-right .line3 #line3-normal {
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  line-height: 17px;
+}
+.system-score-container .top-container .top-container-right .line3 #line3-special {
+  font-size: 16px;
+  font-weight: 400;
+  color: #2681FF;
+  line-height: 17px;
+}
+.system-score-container .top-container .top-container-right #check-btn {
+  background-color: #2681FF;
+  width: 80px;
+  height: 28px;
+  border-radius: 2px;
+  line-height: 28px;
+}
+.system-score-container .H-line {
+  width: 100%;
+  height: 1px;
+  background-color: #E5E5E5;
+  margin: 0 auto;
+  margin-bottom: 16px;
+}
+.system-score-container .issus-desc-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 16px;
+}
+.system-score-container .issus-item {
+  height: 17px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 17px;
+  margin-bottom: 8px;
+}
+
+/* 实现正方形 */
+/* .system-score-container::after {
+            content: "";
+            display: block;
+            padding-top: 100%;
+        } */
+/* #endregion 系统评分 */
+/* #region 能耗数据*/
+.energy-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  margin-bottom: 16px;
+}
+
+.energy-data-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 16px;
+}
+.energy-data-container .energy-data-container-left,
+.energy-data-container .energy-data-container-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  margin-right: 32px;
+}
+.energy-data-container .energy-data-container-left img {
+  width: 108px;
+  height: 45px;
+}
+.energy-data-container .energy-data-container-left h3 {
+  font-size: 24px;
+  color: #333;
+}
+.energy-data-container .energy-data-container-left h4 {
+  font-size: 12px;
+  color: #666;
+}
+.energy-data-container .energy-data-container-right ul li {
+  font-size: 12px;
+  color: #333333;
+  margin-bottom: 8px;
+  line-height: 17px;
+}
+.energy-data-container .energy-data-container-right ul li:last-child {
+  margin-bottom: 0px;
+}
+
+/* #endregion 能耗数据 */
+/* #region 设定信息*/
+.setting-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  margin-bottom: 16px;
+}
+.setting-info .setting-info-runMode-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-bottom: 16px;
+}
+.setting-info .setting-info-runMode-container .setting-info-runMode-container-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 50px;
+}
+.setting-info .setting-info-runMode-container .setting-info-runMode-container-left img {
+  width: 120px;
+  height: 108px;
+}
+.setting-info .setting-info-runMode-container .setting-info-runMode-container-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+}
+.setting-info .setting-info-runMode-container .setting-info-runMode-container-right ul li {
+  font-size: 14px;
+  font-weight: 500;
+  color: #666;
+  line-height: 20px;
+  margin-bottom: 8px;
+  list-style-type: none;
+  background: url("../../assets/hot.png") no-repeat 0.2rem 0.12rem;
+  background-size: 1rem 1rem;
+  text-indent: 2em;
+}
+.setting-info .setting-info-runMode-container .setting-info-runMode-container-right ul li:last-child {
+  margin-bottom: 0px;
+}
+.setting-info .setting-info-runData-container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-gap: 12px;
+  max-width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 16px;
+}
+.setting-info .setting-info-runData-container .grid-item {
+  height: 72px;
+  color: #FFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #2681FF;
+}
+.setting-info .setting-info-runData-container .grid-item .top-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 32px;
+  background-color: #2681FF;
+  font-size: 12px;
+  color: #FFF;
+}
+.setting-info .setting-info-runData-container .grid-item .middle-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 14px;
+  color: #333;
+}
+.setting-info .setting-info-systemCount-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  width: 100%;
+}
+.setting-info .setting-info-systemCount-container .setting-info-systemCount-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  width: 100%;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.setting-info .setting-info-systemCount-container .setting-info-systemCount-item .item-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 8px;
+}
+.setting-info .setting-info-systemCount-container .setting-info-systemCount-item .item-top img {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+.setting-info .setting-info-systemCount-container .setting-info-systemCount-item .item-top h4 {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  width: 56px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #666;
+  line-height: 20px;
+}
+
+/* #endregion 设定信息 *//*# sourceMappingURL=home.css.map */

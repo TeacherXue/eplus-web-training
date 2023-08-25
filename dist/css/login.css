@@ -1,0 +1,152 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #2681FF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login-welcome {
+  margin-top: 80px;
+  font-size: 20px;
+  color: #FFF;
+}
+
+.login-title {
+  margin-top: 10px;
+  font-size: 40px;
+  color: #FFF;
+}
+
+.line {
+  height: 5px;
+  width: 40px;
+  background-color: #f6ca7a;
+  border-radius: 2.5px;
+}
+
+.login-container {
+  margin-top: 20px;
+  padding-top: 20px;
+  width: 93%;
+  height: 300px;
+  background-color: #FFF;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.login-container .login-form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.login-container .account,
+.login-container .password {
+  margin-top: 23px;
+  width: calc(90% - 20px);
+  /* 消除添加 padding-left 后宽度改变问题*/
+  height: 48px;
+  border: 0;
+  font-size: 16px;
+  border-radius: 24px;
+  padding-left: 20px;
+}
+.login-container .account::-webkit-input-placeholder, .login-container .password::-webkit-input-placeholder {
+  color: #a3b4e7;
+}
+.login-container .account::-moz-placeholder, .login-container .password::-moz-placeholder {
+  color: #a3b4e7;
+}
+.login-container .account:-ms-input-placeholder, .login-container .password:-ms-input-placeholder {
+  color: #a3b4e7;
+}
+.login-container .account::-ms-input-placeholder, .login-container .password::-ms-input-placeholder {
+  color: #a3b4e7;
+}
+.login-container .account::placeholder,
+.login-container .password::placeholder {
+  color: #a3b4e7;
+}
+.login-container .login-button {
+  margin-top: 40px;
+  margin-left: auto;
+  /* 修改为自动 */
+  margin-right: auto;
+  /* 添加右边距自动 */
+  width: 60%;
+  height: 40px;
+  border: 0;
+  border-radius: 20px;
+  background-color: #2681FF;
+  color: #FFF;
+  font-size: 16px;
+}
+.login-container .resigner-forget {
+  margin-top: 20px;
+  width: 170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.login-container .resigner-forget .resigner-button a {
+  height: 40px;
+  border: 0;
+  font-size: 16px;
+  color: #2681FF;
+}
+.login-container .resigner-forget .forget-button a {
+  height: 40px;
+  border: 0;
+  font-size: 16px;
+  color: #999;
+}
+
+.v-line {
+  height: 20px;
+  width: 1px;
+  background-color: #999;
+}/*# sourceMappingURL=login.css.map */
